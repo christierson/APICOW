@@ -1,6 +1,6 @@
-# A MicroPython API for GPIO on the Raspberry Pi Pico W 
+# A MicroPython API for the Raspberry Pi Pico W 
 
-This project serves as a web-based gpio API for the raspberry pi pico W (MicroPython). To use this, you'll need to flash your Pico with MicroPython. When the Pico has MicroPython, it's just a matter uploading the files in [/pico](pico) to your Pico and then running [interface.py](interface.py) on a host computer to start controling the pico over your home network.
+This project serves as a web-based gpio API for the raspberry pi pico W, written in MicroPython. To use this, you'll need to flash your Pico with MicroPython. When the Pico has MicroPython, it's just a matter uploading the files in [/pico](pico) to your Pico and then running [interface.py](interface.py) on a host computer to start controling the pico over your home network.
 
 ## Configuration
 Before you upload the files, you will want to modify them to fit your setup. Read the following to correctly set everything up.
