@@ -30,10 +30,8 @@ When you have completed the above steps and uploaded the modified files, you can
 When you have seen those three blinks (can take a few seconds), you should be able to communicate to the Pico using the [/interface.py](interface.py) script. Simply enter the Python REPL with the file loaded: `python -i interface.py`. When you do this the script will attempt to find the Pico and connect to it. If it can do that successfully it will ask the board for its current setup and print it. If it's not able to find the Pico the script will fail.
 
 Once you're in the REPL you can use the functions to configure the pins. Say you have anothe LED connected to `gp15`, in that case you can do `set_pin(15, "led", "out")`. When the pico replies to this call with a success message, you can do `write(15, 1)` to turn on the LED.
-
-When you are happy with how the Picos GPIO is set up, you can call `save_default()` to make the configuration persistent. If you don't set a default board, you will end up with an empty board after restarts. 
-
-With the above setup you will only be able to have the LED on or off. If you want to be able to dim it, do this `set_pin(15, "led", "pwm")` and then `write(15, 0.5)` for example. I recommend just reading through the interface.py file, it's pretty self-explanatory.
+With the above setup you will only be able to have the LED on or off. If you want to be able to dim it, do this `set_pin(15, "led", "pwm")` and then `write(15, 0.5)` for example.
+When you are happy with how the Picos GPIO is set up, you can call `save_default()` to make the configuration persistent. If you don't set a default board, you will end up with an empty board after restarts. I recommend just reading through the interface.py file, it's pretty self-explanatory.
 
 ---
 ### About the project
